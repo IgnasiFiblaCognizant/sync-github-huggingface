@@ -63,7 +63,7 @@ git push --force space main
 ```
 :warning: Using git push --force is a powerful but potentially dangerous command. Be aware that it will overwrite the entire history of the target branch on the Spaces app, so proceed cautiously and ensure you are okay with this action before executing the command.
 
-## 4. Setting Up GitHub Actions for Your Repository
+### 4. Setting Up GitHub Actions for Your Repository
 
 To automate tasks such as pushing changes to your Hugging Face Space, follow these steps:
 
@@ -79,7 +79,7 @@ To automate tasks such as pushing changes to your Hugging Face Space, follow the
    touch .github/workflows/push-to-space.yml
    ```
 
-3. **Create a README File for the HuggingFace Space.**
+3. **Create a README File adding the following fragment at the beginning.**
    - For Docker
    ```md
    ---
@@ -132,10 +132,10 @@ To automate tasks such as pushing changes to your Hugging Face Space, follow the
    - Set the name to HF_TOKEN and paste your Hugging Face token into the value field.
    - Save the secret.
 
-## 5. Define HuggingFace Secrets
+### 5. Define HuggingFace Secrets
 
 1. **Navigate to Settings**  
-   In the GitHub UI, go to **Settings > Variables and Secrets > New Secret**.
+   In the HuggingFace UI, go to **Settings > Variables and Secrets > New Secret**.
 
 2. **Write Down All Environment Variables**  
    Decide whether to use **Variables** or **Secrets** based on the type of data you need to store:
