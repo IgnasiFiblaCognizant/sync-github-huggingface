@@ -25,6 +25,16 @@ This guide outlines the steps to synchronize a GitHub repository with Hugging Fa
 
 ## Steps to Sync
 
+### 0. Create SSH Keys
+
+1. Open Git Bash and execute:
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+2. Open the file `C:/Users/USERNAME/.ssh/id_ed25519.pub` and copy it.
+3. Go to the [Hugging Face SSH Key Settings](https://huggingface.co/settings/keys)
+4. Click the button `Add SSH Key` and copy the content of the `id_ed25519.pub`.
+
 ### 1. Create GitHub Repository
 
 1. Log in to your GitHug account.
@@ -152,6 +162,12 @@ To automate tasks such as pushing changes to your Hugging Face Space, follow the
    - Save your changes.
 
 By organizing your environment variables and secrets properly, you ensure secure and efficient configuration management for your Spaces. 
+
+---
+
+## Usefull links
+- [Hugging Face Wiki](https://huggingface.co/docs/hub/spaces-github-actions)
+- [GitHub Actions Wiki](https://docs.github.com/en/actions)
 
 
 
